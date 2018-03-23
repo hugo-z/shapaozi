@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @extends('adminlte::master')
 
 @section('adminlte_css')
@@ -85,6 +84,3 @@
     </script>
     @yield('js')
 @stop
-=======
-@extends('adminlte::login')
->>>>>>> 1f5a9a93fae034a8238d6debdf2e58317409140d
