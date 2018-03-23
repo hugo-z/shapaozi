@@ -36,11 +36,14 @@ services:
     restart: always
     environment: 
       MYSQL_ROOT_PASSWORD:
+<<<<<<< HEAD
     ports:
       - 3307:3306
     networks:
       - internal
       - proxy
+=======
+>>>>>>> 1f5a9a93fae034a8238d6debdf2e58317409140d
     labels:
       - traefik.enable=false
       
@@ -54,6 +57,7 @@ services:
     container_name: phpmyadmin
     environment: 
       - PMA_ARBITRARY=1
+<<<<<<< HEAD
       - PMA_ABSOLUTE_URI="db-admin.shapaozi.local/pma"
     labels: 
       - traefik.backend=phpmyadmin
@@ -61,14 +65,26 @@ services:
       - traefik.docker.network=proxy
       - traefik.port=8080
       - traefik.enable=true
+=======
+    labels: 
+      - traefik.backend=phpmyadmin
+      - traefik.frontend.rule=Host:db-admin.shapaozi.local
+      - traefik.docker.network=proxy
+      - traefik.port=8080
+>>>>>>> 1f5a9a93fae034a8238d6debdf2e58317409140d
     restart: always
     ports: 
       - 8080:80
     volumes: 
       - /sessions
     networks: 
+<<<<<<< HEAD
       - internal
       - proxy
+=======
+      - proxy
+      - internal
+>>>>>>> 1f5a9a93fae034a8238d6debdf2e58317409140d
     depends_on: 
       - db
     

@@ -4,7 +4,11 @@ defaultEntryPoints = ["http", "https"]
 
 address = ":8080"
   [web.auth.basic]
+<<<<<<< HEAD
     users = ["admin:$apr1$2Eo9RawW$GrisxwNdt7v6J76sm.bTb."]
+=======
+    users = ["admin:$apr1$2Eo9RawW$GrisxwNdt7v6J76sm.bTb"]
+>>>>>>> 1f5a9a93fae034a8238d6debdf2e58317409140d
 
 [entryPoints]
   [entryPoints.http]
