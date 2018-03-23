@@ -1,0 +1,6 @@
+{
+    "name": "Admin",
+    "slug": "admin",
+    "version": "1.0",
+    "description": "This is the admin panel module for the VS"
+}

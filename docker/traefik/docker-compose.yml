@@ -1,0 +1,67 @@
+version: "3"
+
+networks:
+  proxy:
+    external: true
+  internal:
+    external: false
+
+services:
+  shapaozi:
+    build: ../../
+    restart: always
+    environment:
+      # SSH_KEY: "LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcEFJQkFBS0NBUUVBN05jdk9tOU5hVkt4R2xNbTRkQTBCT0JjMys3Y1dMT0lFVnpkL3QybW1TTVRPY05ZCk5oWHEwSTVjM0YxcXRnRkJiRWFpSmFPcVhJN3ZXSE4zVTAvQVBzMU9KRENqaTNMdGtORjYvaUgzMlJRRTBTZUgKbWlrYUtYam9LcXd4SjlKQVo5ZG93Z3hiRDB4c3FkR3kvLzF5b00ybjBiaCtCdmpEdzVNTkU0a2k3UkFMOHhJUwpGb0IxYlZMdzJnODNqU3NCMXltb0RwYnA2TDBNQkNCdHZKNGtlTDBYTnUzWW4waU8yTVI1K0tOVzdGS0RZbVgyCkdoVVpjUk9QWEsxK29kQWlNNzh5d1l0VVBLMldvRUdoUmxWSE9DM1haYlBocEg1dFpuV25MaDVjRjY4SzllaU4KQWpTeFNjL3hNNXA2Q0xDSGovbmNKUjUzQ1FtMjBZLzlaa21tVVFJREFRQUJBb0lCQUQ2WGYvdkpmb1BmUHI3ZQpTdUJTemV5Yi91K1BpTnhJVmlXQWpZclZ1VG12YzExSXF2OWdPM1p5cVVmenlFZmhmUkRJZWdISWh6Vis4UEpIClVibkswZHZIRm1lcUV3Ni9pTmxGQTJRMlJmSXd3RFVtWlVmd3BPRmcrcnFNVjFGVzEzNmFCeTJCWm05Y216c20KR0ZCZkF2Uk1aWldmVkc4elAwbG9pNFFtTWZ6RVJyeDhuWnVQb0V4NDJTOVExNllVcnh0eHpZSzZ0dHgyRkpIVQpsR1BRanJWM1VCYnczbnZncWN1OHcraTc0UUF5dXR1UHhRYmxIVDhNYU83ZEszUDcvaTlpTGtpbW9tbGJMR3NPCkVtdXBrZkphc1RKeXlrdHpuVVRKUDFTRURpUkI0VTZCbUNmRGIyYm1yRFhJcXRhMklpSGhFNllQSXZCZWdhTVYKUXNZcGZpRUNnWUVBK0V0Q2dwMHZZQ2E3NHBidGVxeVdEaUdBVkZLdERucExhS3BQZ1c1THNNekZmUkV1cDRMNQpCWWcva0hHbmZSODdZUEt5M2JSdmVYSGUzSUV0cHp2Y2FtdCswZG1VL05yQ1lvQmxaaFMrR3pxVTFJcXNRNmpkCnVub3VCYTJ6dzdJenJsZWlUQ3lKallLbktrZDYybjlhY2RVeGhLaTN1Q01pZ0ZhczI1Y01KNXNDZ1lFQTlERHMKMnF6TFNvc250Q2hDb0FxYzZud1FFVlRyUUtsQnU5UXV0NjVoeVU5cEp6MURiWGFwamhqM0pGVDRLTmk5MElTWApFQVY3ZC9mMzY4MlRGTUFRRUlpL3BQa25QOW9YVjRGK1lkV0pmYVBJQlNUOStCeUgyMXRWWjVoQWRmdUl3bXZiCitKRW0xZzU5UnEzYXk2YWxpRzFJNlE3ZGtTVUdTQk16N01rSFJvTUNnWUVBMlJoRXdSdGFqd0dQQ2VIWkpvZTgKZEFLS3lDKzVySXoxWGtCN1g3bm1hR0hDMDBXd3V6cGpMWmtocXRRVkUrdTQ2VjJMVXhvdTFjcmdoNEJUUUlPdwpoMFFTRUwzajdPb0JTRXJuWGNnSktKbWlBK3gwRG55WjBqQitDTzBGM3JmelJCN1BnemIxMWt0RWlrMFJkL1llClNLV1Z0RjRvdE5IVG1zOHVPSm5yUUwwQ2dZQjc5T29IQjNnYTJ4RElqemRpN29CQk44RWdTeTh3bjdyU2toODAKOXJ5RTZGN0VvSUM5N0dLZDAyYUJkdkNTSzVRUGFYOFZqdkxpTDJvV3RVQllaRGJEYmVkNjQwOWRSbVJhODAwbwpkTEZhcWUwN1QwL3N4dTdnRnpqL1lYWTNiZnc2Vlc1UWU3NXZJdVBOSVN2VC9VQkNSTmVpRnYyNlZFVWdDVDl1Cmo0MjE2UUtCZ1FDdGViL2VXYTV5WEhoNFEyQ045YVNxbXdIUlNYRE9aSDM3a1dEb3FFUDIzZHNaaVZiVk5UV0QKY2g2YWZ3M3dHVzFHbi92UzF5VGVTbEhVaS90ZEpSV1l3TFlONkZhdE9mTmRzKzIrR1EwRGV0bVBnbThBd3MvNApMRVYwQ2FPdzNMNWNWS1ByZ0RROWc3cEJJL1dzRnVzZGdtMmJxZWE0UzQvRmltRExUVXZzSmc9PQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQo="
+      # GIT_REPO: "git@bitbucket.org:hugorock/vs.git"
+      # GIT_EMAIL: "hugo_zang@icloud.com"
+      # GIT_NAME: "Hugo Zang"
+      WEBROOT: "/var/www/html/public/"
+      ERRORS: 1
+    labels:
+      - traefik.backend=shapaozi
+      - traefik.frontend.rule=Host:shapaozi.local
+      - traefik.docker.network=proxy
+      - traefik.port=80
+    # volumes:
+      # - /root/my_files:/var/www/html/my_files
+    networks:
+      - internal
+      - proxy
+    depends_on:
+      - db
+      - redis
+
+  db:
+    image: mariadb
+    restart: always
+    environment: 
+      MYSQL_ROOT_PASSWORD:
+    labels:
+      - traefik.enable=false
+      
+  redis:
+    image: redis
+    restart: always
+    container_name: redis
+  
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    environment: 
+      - PMA_ARBITRARY=1
+    labels: 
+      - traefik.backend=phpmyadmin
+      - traefik.frontend.rule=Host:db-admin.shapaozi.local
+      - traefik.docker.network=proxy
+      - traefik.port=8080
+    restart: always
+    ports: 
+      - 8080:80
+    volumes: 
+      - /sessions
+    networks: 
+      - proxy
+      - internal
+    depends_on: 
+      - db
+    

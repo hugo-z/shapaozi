@@ -1,0 +1,23 @@
+defaultEntryPoints = ["http", "https"]
+
+[web]
+
+address = ":8080"
+  [web.auth.basic]
+    users = ["admin:$apr1$2Eo9RawW$GrisxwNdt7v6J76sm.bTb"]
+
+[entryPoints]
+  [entryPoints.http]
+  address = ":80"
+#    [entryPoints.http.redirect]
+#      entryPoint = "https
+  [entryPoints.https]
+  address = ":443"
+    [entryPoints.https.tls]
+
+[acme]
+email = "hugo_zang@icloud.com"
+entryPoint = "https"
+storage = "acme.json"
+onHostRule = true
+onDemand = false
