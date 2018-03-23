@@ -1,0 +1,20 @@
+{
+  "name": "Aladdinn",
+  "authors": [
+    "Hugo Zang <hugo.zang@modix.cn>"
+  ],
+  "description": "web media",
+  "main": "index.php",
+  "license": "MIT",
+  "homepage": "http://aladdinn.local",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "select2": "~4.0"
+  }
+}
