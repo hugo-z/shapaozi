@@ -18,7 +18,7 @@
     @endif
 
     @if (config('adminlte.plugins.vue'))
-        <script src="{{ asset('bower_components/vue/dist/vue.js' }}"></script>
+        <script src="{{ asset('bower_components/vue/dist/vue.js') }}"></script>
     @endif
     
     @if(config('adminlte.plugins.bootstrapswitch'))

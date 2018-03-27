@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => '阿拉丁-直播平台后台管理系统',
+    'title' => '傻狍子-直播平台后台管理系统',
 
     'title_prefix' => '',
 
@@ -30,9 +30,9 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>Aladinn',
+    'logo' => '<b>Admin</b>Shapaozi',
 
-    'logo_mini' => '<b>A</b>ALD',
+    'logo_mini' => '<b>A</b>SPZ',
 
     /*
     |--------------------------------------------------------------------------

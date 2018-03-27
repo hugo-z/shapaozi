@@ -22,8 +22,8 @@ services:
       - traefik.frontend.rule=Host:shapaozi.local
       - traefik.docker.network=proxy
       - traefik.port=80
-    # volumes:
-      # - /root/my_files:/var/www/html/my_files
+    volumes:
+      - ../../:/var/www/html
     networks:
       - internal
       - proxy
@@ -37,12 +37,12 @@ services:
     environment: 
       MYSQL_ROOT_PASSWORD:
     ports:
-      - 3307:3306
+      - 4306:3306
     networks:
       - internal
       - proxy
     labels:
-      - traefik.enable=false
+      - traefik.enable=true
       
   redis:
     image: redis
